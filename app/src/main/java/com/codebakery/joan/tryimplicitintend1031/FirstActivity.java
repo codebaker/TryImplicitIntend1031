@@ -1,5 +1,6 @@
 package com.codebakery.joan.tryimplicitintend1031;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,7 +26,7 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
         bundle.putString("result", editTextValue.getText().toString());
         Intent intent = new Intent(this,SecondActivity.class)
                 .putExtras(bundle);
-        startActivity(intent);
+        startActivityForResult(intent,Activity.RESULT_FIRST_USER);
     }
 
 }
