@@ -18,7 +18,6 @@ public class ThirdActivity extends AppCompatActivity implements View.OnClickList
         Bundle bundle = getIntent().getExtras();
         editTextValue = (EditText) findViewById(R.id.editTextValue);
         editTextValue.setText(bundle.getString("result"));
-
         ((Button)findViewById(R.id.button)).setOnClickListener(this);
     }
 
