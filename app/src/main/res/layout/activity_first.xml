@@ -19,8 +19,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="값을 입력하세요"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName"/>
 
     <Button
         android:id="@+id/button"
